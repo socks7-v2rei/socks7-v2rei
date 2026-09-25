@@ -1,106 +1,120 @@
 <div align="center">
-  
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=800&lines=Socks7+-+v2rei;Next-Gen+Ultra-Lightweight+Proxy+Protocol;Version+0x07+%7C+Built+for+Speed+%26+Stability;Powered+by+Rust" alt="Typing SVG" />
-
-<br><br>
-
-<img src="https://img.shields.io/badge/Protocol-0x07-00D4FF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzAwRDRORiIgZD0iTTEyIDJMMTQuMDkgOC4yNkwyMSA5LjI3TDE2IDE0LjE0TDE3LjE4IDIxTDEyIDE3Ljc3TDYuODIgMjFMOCAxNC4xNEwzIDkuMjdMOS45MSA4LjI2TDEyIDJ6Ii8+PC9zdmc+" />
-<img src="https://img.shields.io/badge/Language-Rust-DEA584?style=for-the-badge&logo=rust&logoColor=white" />
-<img src="https://img.shields.io/badge/Status-Active%20Development-00C853?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Network-v2rei.surf-7B61FF?style=for-the-badge" />
-
-</div>
-
----
-
-<div align="center">
-  
-### ⚡ Next-Generation Proxy Protocol  
-**Ultra-lightweight • Extremely stable • Maximum performance**
-
-</div>
-
----
-
-### 🔥 About Socks7 - v2rei
-
-> Socks7 is a clean, modern proxy protocol designed from scratch for extreme performance and minimal overhead.  
-> Built with **Rust** for memory safety and blazing speed.  
-> Developed for the **v2rei** network.
-
-- Protocol Version: `0x07`
-- Native 0-RTT support
-- Extremely low binary overhead
-- High concurrency & low memory footprint
-- Fully extensible Options system
-
----
-
-### 📊 GitHub Stats (Live & Dynamic)
-
-<div align="center">
-  
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=socks7-v2rei&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=00D4FF&text_color=FFFFFF&ring_color=00D4FF" />
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=socks7-v2rei&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=FFFFFF" />
-
+  <img src="assets/hero.svg" width="100%" alt="SOCKS7 — Next Generation Encrypted Proxy Protocol"/>
 </div>
 
 <div align="center">
-  
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=socks7-v2rei&theme=radical&hide_border=true&background=0D1117&ring=00D4FF&fire=00D4FF&currStreakLabel=00D4FF" />
-
+  <strong>EN</strong> &nbsp;·&nbsp; <a href="README.fa.md">فارسی</a>
 </div>
 
----
-
-### 🏆 Trophies
-
-<div align="center">
-  
-<img src="https://github-profile-trophy.vercel.app/?username=socks7-v2rei&theme=radical&no-frame=true&no-bg=false&margin-w=4&row=1" />
-
-</div>
-
----
-
-### 🛠️ Tech Stack
-
-<div align="center">
-  
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-![Tokio](https://img.shields.io/badge/Tokio-000000?style=for-the-badge&logo=tokio&logoColor=white)
-![Protocol Design](https://img.shields.io/badge/Protocol_Design-00D4FF?style=for-the-badge)
-![High Performance](https://img.shields.io/badge/High_Performance-00C853?style=for-the-badge)
-![Network](https://img.shields.io/badge/Network-7B61FF?style=for-the-badge)
-
-</div>
-
----
-
-### 📈 Activity Graph
-
-<div align="center">
-  
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=socks7-v2rei&theme=react-dark&hide_border=true&bg_color=0D1117&color=00D4FF&line=00D4FF&point=FFFFFF" />
-
-</div>
-
----
-
-### 🌐 Connect
+<br/>
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/Website-v2rei.surf-7B61FF?style=for-the-badge&logo=google-chrome&logoColor=white)](https://v2rei.surf)
-[![GitHub](https://img.shields.io/badge/GitHub-socks7--v2rei-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/socks7-v2rei)
+> **SOCKS7** is not "another proxy". It is a ground-up transport fabric that carries *many* logical streams over a *single* obfuscated socket — with a 2-RTT zero-knowledge handshake, forward secrecy, and automatic least-latency egress failover.
 
 </div>
 
----
+<br/>
+
+## ⚡ See it move
 
 <div align="center">
-  
-**Socks7 - v2rei**  
-*Lightweight by design. Powerful by nature.*
+  <img src="assets/terminal.svg" width="92%" alt="socks7 live terminal session"/>
+</div>
 
+<br/>
+
+## 🧬 Why SOCKS7 exists
+
+|  | Classic SOCKS5 | **SOCKS7** |
+|---|---|---|
+| Streams per connection | 1 | **unlimited (multiplexed)** |
+| Handshake | plaintext negotiation | **2-RTT zero-knowledge** |
+| Key exchange | none | **ephemeral X25519 + PSK** |
+| Cipher suite | none / external | **XChaCha20-Poly1305** |
+| UDP | awkward | **native, first-class** |
+| Failover | manual | **automatic, least-latency** |
+| Fingerprint | obvious | **obfuscated (TLS 1.3 cover)** |
+
+<br/>
+
+<div align="center">
+  <img src="assets/topology.svg" width="100%" alt="SOCKS7 multiplexed tunnel topology"/>
+</div>
+
+<br/>
+
+## 🔐 The handshake
+
+<div align="center">
+  <img src="assets/handshake.svg" width="100%" alt="SOCKS7 handshake sequence"/>
+</div>
+
+<br/>
+
+## 📡 Live telemetry
+
+<div align="center">
+  <img src="assets/metrics.svg" width="100%" alt="SOCKS7 live telemetry dashboard"/>
+</div>
+
+<br/>
+
+## 🌐 The fabric
+
+<div align="center">
+  <img src="assets/contribution-network.svg" width="100%" alt="SOCKS7 contribution network"/>
+</div>
+
+<br/>
+
+## 🧰 Quick start
+
+```bash
+# 1 · install
+curl -fsSL https://socks7.dev/install.sh | sh
+
+# 2 · spin up a local edge node
+socks7 node --listen :1080 --cipher xchacha20 --obfs tls1.3
+
+# 3 · route any client through the fabric
+socks7 connect --peer edge-1.eu --streams 4
+```
+
+```python
+from socks7 import Client
+
+with Client("127.0.0.1:1080", streams=8) as c:
+    for host in ("api.example.com", "cdn.example.com"):
+        c.get(f"https://{host}/")   # multiplexed over one socket
+```
+
+<br/>
+
+## 🗺 Roadmap
+
+```text
+[x]  v7.0  core transport · mux · XChaCha20            <- shipping
+[ ]  v7.1  QUIC datagram mode · 0-RTT resume
+[ ]  v7.2  pluggable transports marketplace
+[ ]  v7.3  hardware offload + kernel bypass (io_uring)
+[ ]  v8.0  post-quantum hybrid KEM (X25519 + Kyber)
+```
+
+<br/>
+
+## 🔗 Connect
+
+<div align="center">
+  <img src="assets/badges.svg" width="720" alt="SOCKS7 badges"/>
+</div>
+
+<div align="center">
+
+[**socks7.dev**](#) &nbsp;·&nbsp; [**Docs**](#) &nbsp;·&nbsp; [**Releases**](#) &nbsp;·&nbsp; [**Discussions**](#)
+
+</div>
+
+<div align="center">
+  <sub><code>// built one packet at a time · SOCKS7 © 2026</code></sub>
 </div>
