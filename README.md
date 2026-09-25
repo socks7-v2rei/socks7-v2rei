@@ -1,5 +1,13 @@
 <div align="center">
+  <img src="assets/frame-h.svg" width="100%" alt=""/>
+</div>
+
+<div align="center">
   <img src="assets/hero.svg" width="100%" alt="SOCKS7"/>
+</div>
+
+<div align="center">
+  <img src="assets/frame-h.svg" width="100%" alt=""/>
 </div>
 
 <div align="center">
@@ -12,6 +20,10 @@
 
 <div align="center">
   <img src="assets/connector-2.svg" width="100%" alt=""/>
+</div>
+
+<div align="center">
+  <img src="assets/frame-h.svg" width="100%" alt=""/>
 </div>
 
 <div align="center">
@@ -31,6 +43,10 @@
 </div>
 
 <div align="center">
+  <img src="assets/frame-h.svg" width="100%" alt=""/>
+</div>
+
+<div align="center">
   <img src="assets/handshake.svg" width="100%" alt="Handshake"/>
 </div>
 
@@ -44,6 +60,10 @@
 
 <div align="center">
   <img src="assets/connector-1.svg" width="100%" alt=""/>
+</div>
+
+<div align="center">
+  <img src="assets/frame-h.svg" width="100%" alt=""/>
 </div>
 
 <div align="center">
@@ -63,6 +83,10 @@
 </div>
 
 <div align="center">
+  <img src="assets/frame-h.svg" width="100%" alt=""/>
+</div>
+
+<div align="center">
   <img src="assets/badges.svg" width="780" alt="Badges"/>
 </div>
 
@@ -72,6 +96,10 @@
 
 <div align="center">
   <img src="assets/connect.svg" width="800" alt="Connect"/>
+</div>
+
+<div align="center">
+  <img src="assets/frame-h.svg" width="100%" alt=""/>
 </div>
 
 <br/>
