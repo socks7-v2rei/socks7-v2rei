@@ -73,3 +73,19 @@
 <div align="center">
   <img src="assets/connect.svg" width="800" alt="Connect"/>
 </div>
+
+<br/>
+
+---
+
+<div align="center">
+
+**© 2026 socks7-v2rei · All Rights Reserved**
+
+This repository and all visual works, SVG assets, animations, and content
+are proprietary. Unauthorized copying, reproduction, modification, or
+commercial use is strictly prohibited.
+
+[LICENSE](./LICENSE) · [NOTICE](./NOTICE)
+
+</div>
