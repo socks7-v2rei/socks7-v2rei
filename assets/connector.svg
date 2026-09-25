@@ -1,9 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="100%" height="120" role="img" aria-label="five parallel tunnels on dotted wave">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" width="100%" height="160" role="img" aria-label="terminal tunnel connector">
   <defs>
     <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="0.85" fill="#1a2a42" opacity="0.7"/>
-      <circle cx="13" cy="11" r="0.7" fill="#152438" opacity="0.55"/>
-      <circle cx="7" cy="17" r="0.6" fill="#1c3048" opacity="0.45"/>
+      <circle cx="2" cy="2" r="0.7" fill="#1a2a42" opacity="0.5"/>
+      <circle cx="13" cy="11" r="0.55" fill="#152438" opacity="0.4"/>
     </pattern>
     <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
@@ -30,43 +29,112 @@
       <stop offset="40%" stop-color="#ff6ec7" stop-opacity="1"/>
       <stop offset="100%" stop-color="#ff6ec7" stop-opacity="0"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="termClip"><rect x="20" y="8" width="1160" height="144" rx="10"/></clipPath>
     <style>
-      @keyframes flow { 0%{stroke-dashoffset:40} 100%{stroke-dashoffset:0} }
-      @keyframes pkt {
-        0%   { transform: translateY(0); opacity: 0; }
-        15%  { opacity: 1; }
-        85%  { opacity: 1; }
-        100% { transform: translateY(105px); opacity: 0; }
-      }
-      .flow { stroke-dasharray: 6 10; animation: flow 1.2s linear infinite; }
-      .p1 { animation: pkt 2s ease-in-out infinite; }
-      .p2 { animation: pkt 2s ease-in-out 0.4s infinite; }
-      .p3 { animation: pkt 2s ease-in-out 0.8s infinite; }
-      .p4 { animation: pkt 2s ease-in-out 1.2s infinite; }
-      .p5 { animation: pkt 2s ease-in-out 1.6s infinite; }
+      .code{font-family:ui-monospace,'JetBrains Mono',Menlo,Consolas,monospace;font-size:10px}
+      @keyframes scroll1{0%{transform:translateY(0)}100%{transform:translateY(-80px)}}
+      @keyframes scroll2{0%{transform:translateY(0)}100%{transform:translateY(-60px)}}
+      @keyframes scroll3{0%{transform:translateY(0)}100%{transform:translateY(-100px)}}
+      @keyframes flow{0%{stroke-dashoffset:40}100%{stroke-dashoffset:0}}
+      @keyframes pkt{0%{transform:translateY(0);opacity:0}12%{opacity:1}88%{opacity:1}100%{transform:translateY(150px);opacity:0}}
+      @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+      .s1{animation:scroll1 4s linear infinite}
+      .s2{animation:scroll2 3.2s linear infinite}
+      .s3{animation:scroll3 5s linear infinite}
+      .flow{stroke-dasharray:5 9;animation:flow 1.1s linear infinite}
+      .p1{animation:pkt 1.8s ease-in-out infinite}
+      .p2{animation:pkt 1.8s ease-in-out 0.35s infinite}
+      .p3{animation:pkt 1.8s ease-in-out 0.7s infinite}
+      .p4{animation:pkt 1.8s ease-in-out 1.05s infinite}
+      .p5{animation:pkt 1.8s ease-in-out 1.4s infinite}
+      .cur{animation:blink 0.8s step-end infinite}
     </style>
   </defs>
-  <rect width="1200" height="120" fill="#060a12"/>
-  <rect width="1200" height="120" fill="url(#dots)"/>
-  <path d="M0,40 Q200,28 400,40 T800,40 T1200,40" fill="none" stroke="#0e1a2e" stroke-width="20" opacity="0.5"/>
-  <path d="M0,75 Q200,88 400,75 T800,75 T1200,75" fill="none" stroke="#0c1626" stroke-width="18" opacity="0.4"/>
-  <line x1="200" y1="8" x2="200" y2="112" stroke="url(#g1)" stroke-width="4" filter="url(#glow)"/>
-  <line x1="200" y1="8" x2="200" y2="112" stroke="#00f0ff" stroke-width="1.5" opacity="0.7" class="flow"/>
-  <circle cx="200" cy="10" r="4" fill="#00f0ff" class="p1" filter="url(#glow)"/>
-  <line x1="400" y1="8" x2="400" y2="112" stroke="url(#g2)" stroke-width="4" filter="url(#glow)"/>
-  <line x1="400" y1="8" x2="400" y2="112" stroke="#5fd0ff" stroke-width="1.5" opacity="0.7" class="flow"/>
-  <circle cx="400" cy="10" r="4" fill="#5fd0ff" class="p2" filter="url(#glow)"/>
-  <line x1="600" y1="8" x2="600" y2="112" stroke="url(#g3)" stroke-width="5" filter="url(#glow)"/>
-  <line x1="600" y1="8" x2="600" y2="112" stroke="#cfe4ff" stroke-width="2" opacity="0.85" class="flow"/>
-  <circle cx="600" cy="10" r="5" fill="#8a5cff" class="p3" filter="url(#glow)"/>
-  <line x1="800" y1="8" x2="800" y2="112" stroke="url(#g4)" stroke-width="4" filter="url(#glow)"/>
-  <line x1="800" y1="8" x2="800" y2="112" stroke="#ff2fd0" stroke-width="1.5" opacity="0.7" class="flow"/>
-  <circle cx="800" cy="10" r="4" fill="#ff2fd0" class="p4" filter="url(#glow)"/>
-  <line x1="1000" y1="8" x2="1000" y2="112" stroke="url(#g5)" stroke-width="4" filter="url(#glow)"/>
-  <line x1="1000" y1="8" x2="1000" y2="112" stroke="#ff6ec7" stroke-width="1.5" opacity="0.7" class="flow"/>
-  <circle cx="1000" cy="10" r="4" fill="#ff6ec7" class="p5" filter="url(#glow)"/>
+  <rect width="1200" height="160" fill="#060a12"/>
+  <rect width="1200" height="160" fill="url(#dots)"/>
+  <rect x="20" y="8" width="1160" height="144" rx="10" fill="#0a0e18" stroke="#152743" stroke-width="1"/>
+  <rect x="20" y="8" width="1160" height="22" rx="10" fill="#0c1422"/>
+  <rect x="20" y="22" width="1160" height="8" fill="#0c1422"/>
+  <circle cx="42" cy="19" r="4" fill="#ff5f57"/>
+  <circle cx="56" cy="19" r="4" fill="#febc2e"/>
+  <circle cx="70" cy="19" r="4" fill="#28c840"/>
+  <text x="600" y="22" text-anchor="middle" class="code" fill="#3d5a80" font-size="10">socks7 · fabric mux · streaming</text>
+  <g clip-path="url(#termClip)">
+    <g class="s1">
+      <text x="40" y="50" class="code" fill="#3fe0a0">$ socks7 node --listen :1080</text>
+      <text x="40" y="64" class="code" fill="#5fd0ff">[ok] cipher=xchacha20-poly1305</text>
+      <text x="40" y="78" class="code" fill="#5fd0ff">[ok] obfs=tls1.3 cover</text>
+      <text x="40" y="92" class="code" fill="#8aa0c0">stream[0] open  → edge-eu</text>
+      <text x="40" y="106" class="code" fill="#8aa0c0">stream[1] open  → edge-us</text>
+      <text x="40" y="120" class="code" fill="#00f0ff">mux.frame seq=0x4a2f len=1420</text>
+      <text x="40" y="134" class="code" fill="#5a7096">rtt=12ms  loss=0.0%</text>
+      <text x="40" y="148" class="code" fill="#3fe0a0">$ socks7 connect --streams 8</text>
+      <text x="40" y="162" class="code" fill="#5fd0ff">[ok] handshake 2-RTT ZK done</text>
+      <text x="40" y="176" class="code" fill="#8aa0c0">session.key derived (x25519)</text>
+      <text x="40" y="190" class="code" fill="#00f0ff">packet.encrypt nonce=0x7c91</text>
+      <text x="40" y="204" class="code" fill="#5a7096">throughput 1.2 Gbps</text>
+      <text x="40" y="218" class="code" fill="#3fe0a0">$ _</text>
+    </g>
+    <g class="s2">
+      <text x="320" y="50" class="code" fill="#8a5cff">fn mux_open(id: u32) {</text>
+      <text x="320" y="64" class="code" fill="#cfe4ff">  let s = Stream::new(id);</text>
+      <text x="320" y="78" class="code" fill="#cfe4ff">  self.table.insert(id, s);</text>
+      <text x="320" y="92" class="code" fill="#5a7096">  // zero-copy frame path</text>
+      <text x="320" y="106" class="code" fill="#8a5cff">}</text>
+      <text x="320" y="120" class="code" fill="#ff2fd0">async fn handshake() {</text>
+      <text x="320" y="134" class="code" fill="#cfe4ff">  let eph = X25519::ephemeral();</text>
+      <text x="320" y="148" class="code" fill="#cfe4ff">  let proof = zk::prove(&amp;eph);</text>
+      <text x="320" y="162" class="code" fill="#5a7096">  // 2-RTT complete</text>
+      <text x="320" y="176" class="code" fill="#ff2fd0">}</text>
+      <text x="320" y="190" class="code" fill="#3fe0a0">encrypt(buf, &amp;key, nonce);</text>
+      <text x="320" y="204" class="code" fill="#5fd0ff">// poly1305 tag ok</text>
+      <text x="320" y="218" class="code" fill="#8aa0c0">forward_secrecy: true</text>
+    </g>
+    <g class="s3">
+      <text x="580" y="50" class="code" fill="#00f0ff">0x07 0xa1 0x3c 0xf2 0x00</text>
+      <text x="580" y="64" class="code" fill="#5fd0ff">0x91 0x4e 0xb8 0x2d 0x7a</text>
+      <text x="580" y="78" class="code" fill="#8a5cff">0xc3 0x11 0x6f 0xe0 0x55</text>
+      <text x="580" y="92" class="code" fill="#ff2fd0">0x2a 0x88 0xd4 0x09 0xbc</text>
+      <text x="580" y="106" class="code" fill="#3fe0a0">FRAME_OPEN  stream=4</text>
+      <text x="580" y="120" class="code" fill="#cfe4ff">FRAME_DATA  len=1420</text>
+      <text x="580" y="134" class="code" fill="#5a7096">FRAME_ACK   seq=0x4a2e</text>
+      <text x="580" y="148" class="code" fill="#00f0ff">0x07 0xb2 0x1f 0x90 0x33</text>
+      <text x="580" y="162" class="code" fill="#5fd0ff">0x6c 0x4a 0xe7 0x08 0xd1</text>
+      <text x="580" y="176" class="code" fill="#8a5cff">0xf0 0x25 0x9b 0xc6 0x44</text>
+      <text x="580" y="190" class="code" fill="#ff2fd0">EDGE_SELECT latency=12ms</text>
+      <text x="580" y="204" class="code" fill="#3fe0a0">FAILOVER    edge-us → eu</text>
+      <text x="580" y="218" class="code" fill="#5a7096">// fabric healthy</text>
+    </g>
+    <g class="s1" style="animation-delay:0.5s">
+      <text x="820" y="50" class="code" fill="#3fe0a0">$ watch -n1 'socks7 stat'</text>
+      <text x="820" y="64" class="code" fill="#5fd0ff">streams: 12408 active</text>
+      <text x="820" y="78" class="code" fill="#5fd0ff">sockets: 1  (muxed)</text>
+      <text x="820" y="92" class="code" fill="#8aa0c0">cpu: 2.1%  mem: 18MB</text>
+      <text x="820" y="106" class="code" fill="#00f0ff">egress: edge-eu 12ms</text>
+      <text x="820" y="120" class="code" fill="#ff2fd0">rekey in 47s</text>
+      <text x="820" y="134" class="code" fill="#5a7096">drop: 0  retransmit: 0</text>
+      <text x="820" y="148" class="code" fill="#3fe0a0">$ socks7 peer list</text>
+      <text x="820" y="162" class="code" fill="#5fd0ff">edge-eu  ● 12ms</text>
+      <text x="820" y="176" class="code" fill="#5fd0ff">edge-us  ● 48ms</text>
+      <text x="820" y="190" class="code" fill="#5fd0ff">edge-ap  ● 89ms</text>
+      <text x="820" y="204" class="code" fill="#5a7096">edge-sa  ○ standby</text>
+      <text x="820" y="218" class="code" fill="#3fe0a0">$ █</text>
+    </g>
+  </g>
+  <line x1="200" y1="30" x2="200" y2="150" stroke="url(#g1)" stroke-width="3.5" filter="url(#glow)" opacity="0.85"/>
+  <line x1="200" y1="30" x2="200" y2="150" stroke="#00f0ff" stroke-width="1.2" opacity="0.7" class="flow"/>
+  <circle cx="200" cy="32" r="3.5" fill="#00f0ff" class="p1" filter="url(#glow)"/>
+  <line x1="400" y1="30" x2="400" y2="150" stroke="url(#g2)" stroke-width="3.5" filter="url(#glow)" opacity="0.85"/>
+  <line x1="400" y1="30" x2="400" y2="150" stroke="#5fd0ff" stroke-width="1.2" opacity="0.7" class="flow"/>
+  <circle cx="400" cy="32" r="3.5" fill="#5fd0ff" class="p2" filter="url(#glow)"/>
+  <line x1="600" y1="30" x2="600" y2="150" stroke="url(#g3)" stroke-width="4.5" filter="url(#glow)" opacity="0.95"/>
+  <line x1="600" y1="30" x2="600" y2="150" stroke="#cfe4ff" stroke-width="1.5" opacity="0.85" class="flow"/>
+  <circle cx="600" cy="32" r="4.5" fill="#8a5cff" class="p3" filter="url(#glow)"/>
+  <line x1="800" y1="30" x2="800" y2="150" stroke="url(#g4)" stroke-width="3.5" filter="url(#glow)" opacity="0.85"/>
+  <line x1="800" y1="30" x2="800" y2="150" stroke="#ff2fd0" stroke-width="1.2" opacity="0.7" class="flow"/>
+  <circle cx="800" cy="32" r="3.5" fill="#ff2fd0" class="p4" filter="url(#glow)"/>
+  <line x1="1000" y1="30" x2="1000" y2="150" stroke="url(#g5)" stroke-width="3.5" filter="url(#glow)" opacity="0.85"/>
+  <line x1="1000" y1="30" x2="1000" y2="150" stroke="#ff6ec7" stroke-width="1.2" opacity="0.7" class="flow"/>
+  <circle cx="1000" cy="32" r="3.5" fill="#ff6ec7" class="p5" filter="url(#glow)"/>
 </svg>
