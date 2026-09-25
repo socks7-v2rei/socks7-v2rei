@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" width="100%" height="420" role="img" aria-label="Why SOCKS7">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050810"/><stop offset="100%" stop-color="#0a1424"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f0ff"/><stop offset="100%" stop-color="#8a5cff"/>
+    </linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .t{font-family:Georgia,'Times New Roman',serif}
+      .m{font-family:ui-monospace,monospace}
+      @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+      .row{animation:fadeUp 0.8s ease-out both}
+      .r1{animation-delay:0.1s}.r2{animation-delay:0.2s}.r3{animation-delay:0.3s}
+      .r4{animation-delay:0.4s}.r5{animation-delay:0.5s}.r6{animation-delay:0.6s}.r7{animation-delay:0.7s}
+    </style>
+  </defs>
+  <rect width="1100" height="420" rx="16" fill="url(#cbg)"/>
+  <text x="550" y="42" text-anchor="middle" class="t" font-size="22" fill="#cfe4ff" letter-spacing="3">𝑊ℎ𝑦 𝑆𝑂𝐶𝐾𝑆7 𝑒𝑥𝑖𝑠𝑡𝑠</text>
+  <line x1="80" y1="60" x2="1020" y2="60" stroke="#152743" stroke-width="1"/>
+  <text x="280" y="100" text-anchor="middle" class="t" font-size="15" fill="#5a7096">𝐶𝑙𝑎𝑠𝑠𝑖𝑐 𝑆𝑂𝐶𝐾𝑆5</text>
+  <text x="780" y="100" text-anchor="middle" class="t" font-size="15" fill="#00f0ff" filter="url(#g)">𝑆𝑂𝐶𝐾𝑆7</text>
+  <g class="row r1">
+    <text x="80" y="145" class="m" font-size="13" fill="#7a90b0">𝑆𝑡𝑟𝑒𝑎𝑚𝑠 𝑝𝑒𝑟 𝑐𝑜𝑛𝑛𝑒𝑐𝑡𝑖𝑜𝑛</text>
+    <text x="280" y="145" text-anchor="middle" class="m" font-size="13" fill="#5a7096">1</text>
+    <text x="780" y="145" text-anchor="middle" class="m" font-size="13" fill="#00f0ff">𝑢𝑛𝑙𝑖𝑚𝑖𝑡𝑒𝑑 (𝑚𝑢𝑙𝑡𝑖𝑝𝑙𝑒𝑥𝑒𝑑)</text>
+  </g>
+  <g class="row r2">
+    <text x="80" y="185" class="m" font-size="13" fill="#7a90b0">𝐻𝑎𝑛𝑑𝑠ℎ𝑎𝑘𝑒</text>
+    <text x="280" y="185" text-anchor="middle" class="m" font-size="13" fill="#5a7096">𝑝𝑙𝑎𝑖𝑛𝑡𝑒𝑥𝑡 𝑛𝑒𝑔𝑜𝑡𝑖𝑎𝑡𝑖𝑜𝑛</text>
+    <text x="780" y="185" text-anchor="middle" class="m" font-size="13" fill="#00f0ff">2-𝑅𝑇𝑇 𝑧𝑒𝑟𝑜-𝑘𝑛𝑜𝑤𝑙𝑒𝑑𝑔𝑒</text>
+  </g>
+  <g class="row r3">
+    <text x="80" y="225" class="m" font-size="13" fill="#7a90b0">𝐾𝑒𝑦 𝑒𝑥𝑐ℎ𝑎𝑛𝑔𝑒</text>
+    <text x="280" y="225" text-anchor="middle" class="m" font-size="13" fill="#5a7096">𝑛𝑜𝑛𝑒</text>
+    <text x="780" y="225" text-anchor="middle" class="m" font-size="13" fill="#00f0ff">𝑒𝑝ℎ𝑒𝑚𝑒𝑟𝑎𝑙 𝑋25519 + 𝑃𝑆𝐾</text>
+  </g>
+  <g class="row r4">
+    <text x="80" y="265" class="m" font-size="13" fill="#7a90b0">𝐶𝑖𝑝ℎ𝑒𝑟 𝑠𝑢𝑖𝑡𝑒</text>
+    <text x="280" y="265" text-anchor="middle" class="m" font-size="13" fill="#5a7096">𝑛𝑜𝑛𝑒 / 𝑒𝑥𝑡𝑒𝑟𝑛𝑎𝑙</text>
+    <text x="780" y="265" text-anchor="middle" class="m" font-size="13" fill="#00f0ff">𝑋𝐶ℎ𝑎𝐶ℎ𝑎20-𝑃𝑜𝑙𝑦1305</text>
+  </g>
+  <g class="row r5">
+    <text x="80" y="305" class="m" font-size="13" fill="#7a90b0">𝑈𝐷𝑃</text>
+    <text x="280" y="305" text-anchor="middle" class="m" font-size="13" fill="#5a7096">𝑎𝑤𝑘𝑤𝑎𝑟𝑑</text>
+    <text x="780" y="305" text-anchor="middle" class="m" font-size="13" fill="#00f0ff">𝑛𝑎𝑡𝑖𝑣𝑒, 𝑓𝑖𝑟𝑠𝑡-𝑐𝑙𝑎𝑠𝑠</text>
+  </g>
+  <g class="row r6">
+    <text x="80" y="345" class="m" font-size="13" fill="#7a90b0">𝐹𝑎𝑖𝑙𝑜𝑣𝑒𝑟</text>
+    <text x="280" y="345" text-anchor="middle" class="m" font-size="13" fill="#5a7096">𝑚𝑎𝑛𝑢𝑎𝑙</text>
+    <text x="780" y="345" text-anchor="middle" class="m" font-size="13" fill="#00f0ff">𝑎𝑢𝑡𝑜𝑚𝑎𝑡𝑖𝑐, 𝑙𝑒𝑎𝑠𝑡-𝑙𝑎𝑡𝑒𝑛𝑐𝑦</text>
+  </g>
+  <g class="row r7">
+    <text x="80" y="385" class="m" font-size="13" fill="#7a90b0">𝐹𝑖𝑛𝑔𝑒𝑟𝑝𝑟𝑖𝑛𝑡</text>
+    <text x="280" y="385" text-anchor="middle" class="m" font-size="13" fill="#5a7096">𝑜𝑏𝑣𝑖𝑜𝑢𝑠</text>
+    <text x="780" y="385" text-anchor="middle" class="m" font-size="13" fill="#00f0ff">𝑜𝑏𝑓𝑢𝑠𝑐𝑎𝑡𝑒𝑑 (𝑇𝐿𝑆 1.3 𝑐𝑜𝑣𝑒𝑟)</text>
+  </g>
+</svg>
