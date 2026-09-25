@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="400" role="img" aria-label="SOCKS7 live telemetry dashboard">
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#060a12"/><stop offset="100%" stop-color="#0a1628"/></linearGradient>
+    <style>.m{font-family:ui-monospace,'JetBrains Mono',monospace}.v{font-size:28px;fill:#00f0ff;font-weight:700}.l{font-size:12px;fill:#5a7096}@keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}.p{animation:pulse 2s ease-in-out infinite}</style>
+  </defs>
+  <rect width="1200" height="400" fill="url(#mbg)"/>
+  <text x="600" y="36" text-anchor="middle" class="m" font-size="16" fill="#cfe4ff" letter-spacing="3">// LIVE TELEMETRY · SOCKS7 FABRIC</text>
+  <!-- metric cards -->
+  <g class="p">
+    <rect x="40" y="70" width="260" height="120" rx="10" fill="#0c1a2e" stroke="#152743"/>
+    <text x="170" y="120" text-anchor="middle" class="m v">0.8 ms</text>
+    <text x="170" y="150" text-anchor="middle" class="m l">handshake latency</text>
+  </g>
+  <g class="p" style="animation-delay:.3s">
+    <rect x="330" y="70" width="260" height="120" rx="10" fill="#0c1a2e" stroke="#152743"/>
+    <text x="460" y="120" text-anchor="middle" class="m v">12.4k</text>
+    <text x="460" y="150" text-anchor="middle" class="m l">streams / socket</text>
+  </g>
+  <g class="p" style="animation-delay:.6s">
+    <rect x="620" y="70" width="260" height="120" rx="10" fill="#0c1a2e" stroke="#152743"/>
+    <text x="750" y="120" text-anchor="middle" class="m v">99.99%</text>
+    <text x="750" y="150" text-anchor="middle" class="m l">uptime (30d)</text>
+  </g>
+  <g class="p" style="animation-delay:.9s">
+    <rect x="910" y="70" width="250" height="120" rx="10" fill="#0c1a2e" stroke="#152743"/>
+    <text x="1035" y="120" text-anchor="middle" class="m v">3.2 µs</text>
+    <text x="1035" y="150" text-anchor="middle" class="m l">per-packet overhead</text>
+  </g>
+  <!-- bottom row -->
+  <rect x="40" y="220" width="1120" height="140" rx="10" fill="#0c1a2e" stroke="#152743"/>
+  <text x="60" y="250" class="m" font-size="13" fill="#5fd0ff">active edges</text>
+  <text x="60" y="280" class="m" font-size="22" fill="#3fe0a0">edge-eu · edge-us · edge-ap</text>
+  <text x="60" y="320" class="m" font-size="12" fill="#5a7096">least-latency selected · automatic failover · zero-knowledge session</text>
+  <text x="900" y="280" class="m" font-size="14" fill="#00f0ff">cipher: XChaCha20-Poly1305</text>
+  <text x="900" y="310" class="m" font-size="14" fill="#8a5cff">obfs: TLS 1.3 cover</text>
+</svg>
