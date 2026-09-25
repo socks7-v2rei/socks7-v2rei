@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="320" role="img" aria-label="Roadmap">
   <defs>
-    <linearGradient id="rbg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#050810"/><stop offset="100%" stop-color="#0a1424"/>
-    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.85" fill="#1a2a42" opacity="0.65"/>
+      <circle cx="13" cy="11" r="0.7" fill="#152438" opacity="0.5"/>
+      <circle cx="7" cy="17" r="0.6" fill="#1c3048" opacity="0.4"/>
+    </pattern>
     <style>
       .t{font-family:Georgia,'Times New Roman',serif}
       .m{font-family:ui-monospace,monospace}
@@ -12,32 +14,11 @@
       .i4{animation-delay:0.55s}.i5{animation-delay:0.7s}
     </style>
   </defs>
-  <rect width="900" height="320" rx="14" fill="url(#rbg)"/>
+  <rect width="900" height="320" rx="14" fill="#060a12"/><rect width="900" height="320" rx="14" fill="url(#dots)"/>
   <text x="450" y="40" text-anchor="middle" class="t" font-size="20" fill="#cfe4ff" letter-spacing="4">𝑅𝑜𝑎𝑑𝑚𝑎𝑝</text>
-  <g class="item i1">
-    <rect x="50" y="70" width="800" height="38" rx="8" fill="#0c1a2e" stroke="#00f0ff" stroke-width="1"/>
-    <text x="70" y="94" class="m" font-size="14" fill="#3fe0a0">[𝑥]</text>
-    <text x="110" y="94" class="m" font-size="14" fill="#cfe4ff">𝑣7.0  𝑐𝑜𝑟𝑒 𝑡𝑟𝑎𝑛𝑠𝑝𝑜𝑟𝑡 · 𝑚𝑢𝑥 · 𝑋𝐶ℎ𝑎𝐶ℎ𝑎20</text>
-    <text x="780" y="94" class="m" font-size="13" fill="#00f0ff">𝑠ℎ𝑖𝑝𝑝𝑖𝑛𝑔</text>
-  </g>
-  <g class="item i2">
-    <rect x="50" y="118" width="800" height="38" rx="8" fill="#0c1a2e" stroke="#152743"/>
-    <text x="70" y="142" class="m" font-size="14" fill="#5a7096">[ ]</text>
-    <text x="110" y="142" class="m" font-size="14" fill="#8aa0c0">𝑣7.1  𝑄𝑈𝐼𝐶 𝑑𝑎𝑡𝑎𝑔𝑟𝑎𝑚 𝑚𝑜𝑑𝑒 · 0-𝑅𝑇𝑇 𝑟𝑒𝑠𝑢𝑚𝑒</text>
-  </g>
-  <g class="item i3">
-    <rect x="50" y="166" width="800" height="38" rx="8" fill="#0c1a2e" stroke="#152743"/>
-    <text x="70" y="190" class="m" font-size="14" fill="#5a7096">[ ]</text>
-    <text x="110" y="190" class="m" font-size="14" fill="#8aa0c0">𝑣7.2  𝑝𝑙𝑢𝑔𝑔𝑎𝑏𝑙𝑒 𝑡𝑟𝑎𝑛𝑠𝑝𝑜𝑟𝑡𝑠 𝑚𝑎𝑟𝑘𝑒𝑡𝑝𝑙𝑎𝑐𝑒</text>
-  </g>
-  <g class="item i4">
-    <rect x="50" y="214" width="800" height="38" rx="8" fill="#0c1a2e" stroke="#152743"/>
-    <text x="70" y="238" class="m" font-size="14" fill="#5a7096">[ ]</text>
-    <text x="110" y="238" class="m" font-size="14" fill="#8aa0c0">𝑣7.3  ℎ𝑎𝑟𝑑𝑤𝑎𝑟𝑒 𝑜𝑓𝑓𝑙𝑜𝑎𝑑 + 𝑘𝑒𝑟𝑛𝑒𝑙 𝑏𝑦𝑝𝑎𝑠𝑠</text>
-  </g>
-  <g class="item i5">
-    <rect x="50" y="262" width="800" height="38" rx="8" fill="#0c1a2e" stroke="#152743"/>
-    <text x="70" y="286" class="m" font-size="14" fill="#5a7096">[ ]</text>
-    <text x="110" y="286" class="m" font-size="14" fill="#8aa0c0">𝑣8.0  𝑝𝑜𝑠𝑡-𝑞𝑢𝑎𝑛𝑡𝑢𝑚 ℎ𝑦𝑏𝑟𝑖𝑑 𝐾𝐸𝑀 (𝑋25519 + 𝐾𝑦𝑏𝑒𝑟)</text>
-  </g>
+  <g class="item i1"><rect x="50" y="70" width="800" height="38" rx="8" fill="#0c1a2e" stroke="#00f0ff" stroke-width="1"/><text x="70" y="94" class="m" font-size="14" fill="#3fe0a0">[𝑥]</text><text x="110" y="94" class="m" font-size="14" fill="#cfe4ff">𝑣7.0  𝑐𝑜𝑟𝑒 𝑡𝑟𝑎𝑛𝑠𝑝𝑜𝑟𝑡 · 𝑚𝑢𝑥 · 𝑋𝐶ℎ𝑎𝐶ℎ𝑎20</text><text x="780" y="94" class="m" font-size="13" fill="#00f0ff">𝑠ℎ𝑖𝑝𝑝𝑖𝑛𝑔</text></g>
+  <g class="item i2"><rect x="50" y="118" width="800" height="38" rx="8" fill="#0c1a2e" stroke="#152743"/><text x="70" y="142" class="m" font-size="14" fill="#5a7096">[ ]</text><text x="110" y="142" class="m" font-size="14" fill="#8aa0c0">𝑣7.1  𝑄𝑈𝐼𝐶 𝑑𝑎𝑡𝑎𝑔𝑟𝑎𝑚 𝑚𝑜𝑑𝑒 · 0-𝑅𝑇𝑇 𝑟𝑒𝑠𝑢𝑚𝑒</text></g>
+  <g class="item i3"><rect x="50" y="166" width="800" height="38" rx="8" fill="#0c1a2e" stroke="#152743"/><text x="70" y="190" class="m" font-size="14" fill="#5a7096">[ ]</text><text x="110" y="190" class="m" font-size="14" fill="#8aa0c0">𝑣7.2  𝑝𝑙𝑢𝑔𝑔𝑎𝑏𝑙𝑒 𝑡𝑟𝑎𝑛𝑠𝑝𝑜𝑟𝑡𝑠 𝑚𝑎𝑟𝑘𝑒𝑡𝑝𝑙𝑎𝑐𝑒</text></g>
+  <g class="item i4"><rect x="50" y="214" width="800" height="38" rx="8" fill="#0c1a2e" stroke="#152743"/><text x="70" y="238" class="m" font-size="14" fill="#5a7096">[ ]</text><text x="110" y="238" class="m" font-size="14" fill="#8aa0c0">𝑣7.3  ℎ𝑎𝑟𝑑𝑤𝑎𝑟𝑒 𝑜𝑓𝑓𝑙𝑜𝑎𝑑 + 𝑘𝑒𝑟𝑛𝑒𝑙 𝑏𝑦𝑝𝑎𝑠𝑠</text></g>
+  <g class="item i5"><rect x="50" y="262" width="800" height="38" rx="8" fill="#0c1a2e" stroke="#152743"/><text x="70" y="286" class="m" font-size="14" fill="#5a7096">[ ]</text><text x="110" y="286" class="m" font-size="14" fill="#8aa0c0">𝑣8.0  𝑝𝑜𝑠𝑡-𝑞𝑢𝑎𝑛𝑡𝑢𝑚 ℎ𝑦𝑏𝑟𝑖𝑑 𝐾𝐸𝑀 (𝑋25519 + 𝐾𝑦𝑏𝑒𝑟)</text></g>
 </svg>

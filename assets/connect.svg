@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="100%" height="160" role="img" aria-label="Connect">
   <defs>
-    <linearGradient id="cbg2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#050810"/><stop offset="100%" stop-color="#0a1424"/>
-    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.85" fill="#1a2a42" opacity="0.65"/>
+      <circle cx="13" cy="11" r="0.7" fill="#152438" opacity="0.5"/>
+      <circle cx="7" cy="17" r="0.6" fill="#1c3048" opacity="0.4"/>
+    </pattern>
     <filter id="cg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <style>
       .t{font-family:Georgia,'Times New Roman',serif}
@@ -11,7 +13,7 @@
       .p{animation:pulse 2.5s ease-in-out infinite}
     </style>
   </defs>
-  <rect width="800" height="160" rx="14" fill="url(#cbg2)"/>
+  <rect width="800" height="160" rx="14" fill="#060a12"/><rect width="800" height="160" rx="14" fill="url(#dots)"/>
   <text x="400" y="45" text-anchor="middle" class="t" font-size="18" fill="#cfe4ff" letter-spacing="3">𝐶𝑜𝑛𝑛𝑒𝑐𝑡</text>
   <g class="p" filter="url(#cg)">
     <rect x="80" y="75" width="140" height="42" rx="10" fill="#0c1a2e" stroke="#00f0ff" stroke-width="1.2"/>
