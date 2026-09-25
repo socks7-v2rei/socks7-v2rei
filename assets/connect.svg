@@ -1,29 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="100%" height="160" role="img" aria-label="Connect">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="100%" height="200" role="img" aria-label="Connect">
   <defs>
     <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
       <circle cx="2" cy="2" r="0.85" fill="#1a2a42" opacity="0.65"/>
       <circle cx="13" cy="11" r="0.7" fill="#152438" opacity="0.5"/>
       <circle cx="7" cy="17" r="0.6" fill="#1c3048" opacity="0.4"/>
     </pattern>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f0ff"/><stop offset="50%" stop-color="#8a5cff"/><stop offset="100%" stop-color="#ff2fd0"/>
+    </linearGradient>
     <filter id="cg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <style>
       .t{font-family:Georgia,'Times New Roman',serif}
       .m{font-family:ui-monospace,monospace}
       @keyframes pulse{0%,100%{opacity:0.7}50%{opacity:1}}
+      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
       .p{animation:pulse 2.5s ease-in-out infinite}
+      .f{animation:float 3s ease-in-out infinite}
     </style>
   </defs>
-  <rect width="800" height="160" rx="14" fill="#060a12"/><rect width="800" height="160" rx="14" fill="url(#dots)"/>
-  <text x="400" y="45" text-anchor="middle" class="t" font-size="18" fill="#cfe4ff" letter-spacing="3">𝐶𝑜𝑛𝑛𝑒𝑐𝑡</text>
-  <g class="p" filter="url(#cg)">
-    <rect x="80" y="75" width="140" height="42" rx="10" fill="#0c1a2e" stroke="#00f0ff" stroke-width="1.2"/>
-    <text x="150" y="101" text-anchor="middle" class="m" font-size="14" fill="#00f0ff">𝑠𝑜𝑐𝑘𝑠7.𝑑𝑒𝑣</text>
-    <rect x="250" y="75" width="110" height="42" rx="10" fill="#0c1a2e" stroke="#8a5cff" stroke-width="1.2"/>
-    <text x="305" y="101" text-anchor="middle" class="m" font-size="14" fill="#8a5cff">𝐷𝑜𝑐𝑠</text>
-    <rect x="390" y="75" width="130" height="42" rx="10" fill="#0c1a2e" stroke="#ff2fd0" stroke-width="1.2"/>
-    <text x="455" y="101" text-anchor="middle" class="m" font-size="14" fill="#ff2fd0">𝑅𝑒𝑙𝑒𝑎𝑠𝑒𝑠</text>
-    <rect x="550" y="75" width="150" height="42" rx="10" fill="#0c1a2e" stroke="#3fe0a0" stroke-width="1.2"/>
-    <text x="625" y="101" text-anchor="middle" class="m" font-size="14" fill="#3fe0a0">𝐷𝑖𝑠𝑐𝑢𝑠𝑠𝑖𝑜𝑛𝑠</text>
+  <rect width="900" height="200" rx="14" fill="#060a12"/><rect width="900" height="200" rx="14" fill="url(#dots)"/>
+  <g transform="translate(80,100)" filter="url(#cg)" class="f">
+    <circle r="28" fill="none" stroke="url(#neon)" stroke-width="1.5" opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="18" fill="#0c1a2e" stroke="#00f0ff" stroke-width="1.2"/>
+    <text text-anchor="middle" y="5" class="t" font-size="12" fill="#00f0ff" font-weight="700">𝑆7</text>
   </g>
-  <text x="400" y="145" text-anchor="middle" class="m" font-size="12" fill="#2a4060">// 𝑏𝑢𝑖𝑙𝑡 𝑜𝑛𝑒 𝑝𝑎𝑐𝑘𝑒𝑡 𝑎𝑡 𝑎 𝑡𝑖𝑚𝑒 · 𝑆𝑂𝐶𝐾𝑆7 © 2026</text>
+  <text x="450" y="45" text-anchor="middle" class="t" font-size="20" fill="#cfe4ff" letter-spacing="4">𝐶𝑜𝑛𝑛𝑒𝑐𝑡</text>
+  <g class="p" filter="url(#cg)">
+    <rect x="160" y="80" width="140" height="48" rx="12" fill="#0c1a2e" stroke="#00f0ff" stroke-width="1.3"/>
+    <text x="230" y="110" text-anchor="middle" class="m" font-size="14" fill="#00f0ff">𝑠𝑜𝑐𝑘𝑠7.𝑑𝑒𝑣</text>
+    <rect x="320" y="80" width="120" height="48" rx="12" fill="#0c1a2e" stroke="#8a5cff" stroke-width="1.3"/>
+    <text x="380" y="110" text-anchor="middle" class="m" font-size="14" fill="#8a5cff">𝐷𝑜𝑐𝑠</text>
+    <rect x="460" y="80" width="130" height="48" rx="12" fill="#0c1a2e" stroke="#ff2fd0" stroke-width="1.3"/>
+    <text x="525" y="110" text-anchor="middle" class="m" font-size="14" fill="#ff2fd0">𝑅𝑒𝑙𝑒𝑎𝑠𝑒𝑠</text>
+    <rect x="610" y="80" width="150" height="48" rx="12" fill="#0c1a2e" stroke="#3fe0a0" stroke-width="1.3"/>
+    <text x="685" y="110" text-anchor="middle" class="m" font-size="14" fill="#3fe0a0">𝐷𝑖𝑠𝑐𝑢𝑠𝑠𝑖𝑜𝑛𝑠</text>
+  </g>
+  <g>
+    <circle cx="200" cy="160" r="3" fill="#3fe0a0"><animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/></circle>
+    <text x="215" y="164" class="m" font-size="12" fill="#5a7096">𝑓𝑎𝑏𝑟𝑖𝑐 𝑜𝑛𝑙𝑖𝑛𝑒</text>
+    <circle cx="380" cy="160" r="3" fill="#00f0ff"><animate attributeName="opacity" values="1;0.3;1" dur="1.8s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <text x="395" y="164" class="m" font-size="12" fill="#5a7096">𝑒𝑛𝑐𝑟𝑦𝑝𝑡𝑒𝑑</text>
+    <circle cx="540" cy="160" r="3" fill="#8a5cff"><animate attributeName="opacity" values="1;0.3;1" dur="1.8s" begin="0.8s" repeatCount="indefinite"/></circle>
+    <text x="555" y="164" class="m" font-size="12" fill="#5a7096">𝑚𝑢𝑙𝑡𝑖𝑝𝑙𝑒𝑥𝑒𝑑</text>
+  </g>
+  <text x="450" y="190" text-anchor="middle" class="m" font-size="11" fill="#2a4060">// 𝑏𝑢𝑖𝑙𝑡 𝑜𝑛𝑒 𝑝𝑎𝑐𝑘𝑒𝑡 𝑎𝑡 𝑎 𝑡𝑖𝑚𝑒 · 𝑆𝑂𝐶𝐾𝑆7 © 2026</text>
 </svg>
