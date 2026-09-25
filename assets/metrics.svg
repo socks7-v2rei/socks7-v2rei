@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 340" width="100%" height="340" role="img" aria-label="Metrics">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="100%" height="360" role="img" aria-label="Metrics">
   <defs>
     <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
       <circle cx="2" cy="2" r="0.85" fill="#1a2a42" opacity="0.65"/>
@@ -10,37 +10,72 @@
       .t{font-family:Georgia,'Times New Roman',serif}
       .m{font-family:ui-monospace,monospace}
       @keyframes pulse{0%,100%{opacity:0.65}50%{opacity:1}}
+      @keyframes countUp{from{opacity:0;transform:scale(0.8)}to{opacity:1;transform:scale(1)}}
       .p{animation:pulse 2.4s ease-in-out infinite}
       .p2{animation:pulse 2.4s ease-in-out 0.4s infinite}
       .p3{animation:pulse 2.4s ease-in-out 0.8s infinite}
       .p4{animation:pulse 2.4s ease-in-out 1.2s infinite}
+      .pop{animation:countUp 0.6s ease-out both}
     </style>
   </defs>
-  <rect width="1100" height="340" rx="14" fill="#060a12"/><rect width="1100" height="340" rx="14" fill="url(#dots)"/>
+  <rect width="1100" height="360" rx="14" fill="#060a12"/><rect width="1100" height="360" rx="14" fill="url(#dots)"/>
   <text x="550" y="38" text-anchor="middle" class="t" font-size="18" fill="#cfe4ff" letter-spacing="3">𝐿𝑖𝑣𝑒 𝑡𝑒𝑙𝑒𝑚𝑒𝑡𝑟𝑦</text>
+  <g transform="translate(1020,30)" filter="url(#mg)">
+    <circle r="14" fill="none" stroke="#00f0ff" stroke-width="1.2" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="6" fill="#00f0ff" opacity="0.8">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
   <g class="p" filter="url(#mg)">
-    <rect x="40" y="70" width="240" height="110" rx="12" fill="#0c1a2e" stroke="#152743"/>
-    <text x="160" y="120" text-anchor="middle" class="t" font-size="32" fill="#00f0ff">0.8 𝑚𝑠</text>
-    <text x="160" y="155" text-anchor="middle" class="m" font-size="13" fill="#5a7096">ℎ𝑎𝑛𝑑𝑠ℎ𝑎𝑘𝑒 𝑙𝑎𝑡𝑒𝑛𝑐𝑦</text>
+    <rect x="40" y="70" width="240" height="130" rx="12" fill="#0c1a2e" stroke="#152743"/>
+    <text x="60" y="95" class="m" font-size="11" fill="#5a7096">⚡ LATENCY</text>
+    <text x="160" y="140" text-anchor="middle" class="t pop" font-size="36" fill="#00f0ff">0.8 𝑚𝑠</text>
+    <text x="160" y="170" text-anchor="middle" class="m" font-size="12" fill="#5a7096">ℎ𝑎𝑛𝑑𝑠ℎ𝑎𝑘𝑒</text>
+    <rect x="60" y="180" width="30" height="8" rx="2" fill="#00f0ff" opacity="0.4"/>
+    <rect x="95" y="176" width="30" height="12" rx="2" fill="#00f0ff" opacity="0.6"/>
+    <rect x="130" y="172" width="30" height="16" rx="2" fill="#00f0ff" opacity="0.8"/>
+    <rect x="165" y="178" width="30" height="10" rx="2" fill="#00f0ff" opacity="0.5"/>
+    <rect x="200" y="174" width="30" height="14" rx="2" fill="#00f0ff" opacity="0.7"/>
   </g>
   <g class="p2" filter="url(#mg)">
-    <rect x="310" y="70" width="240" height="110" rx="12" fill="#0c1a2e" stroke="#152743"/>
-    <text x="430" y="120" text-anchor="middle" class="t" font-size="32" fill="#8a5cff">12.4𝑘</text>
-    <text x="430" y="155" text-anchor="middle" class="m" font-size="13" fill="#5a7096">𝑠𝑡𝑟𝑒𝑎𝑚𝑠 / 𝑠𝑜𝑐𝑘𝑒𝑡</text>
+    <rect x="310" y="70" width="240" height="130" rx="12" fill="#0c1a2e" stroke="#152743"/>
+    <text x="330" y="95" class="m" font-size="11" fill="#5a7096">◈ STREAMS</text>
+    <text x="430" y="140" text-anchor="middle" class="t pop" font-size="36" fill="#8a5cff">12.4𝑘</text>
+    <text x="430" y="170" text-anchor="middle" class="m" font-size="12" fill="#5a7096">𝑝𝑒𝑟 𝑠𝑜𝑐𝑘𝑒𝑡</text>
+    <rect x="330" y="180" width="40" height="8" rx="2" fill="#8a5cff" opacity="0.5"/>
+    <rect x="375" y="176" width="50" height="12" rx="2" fill="#8a5cff" opacity="0.7"/>
+    <rect x="430" y="172" width="60" height="16" rx="2" fill="#8a5cff" opacity="0.9"/>
+    <rect x="495" y="178" width="35" height="10" rx="2" fill="#8a5cff" opacity="0.5"/>
   </g>
   <g class="p3" filter="url(#mg)">
-    <rect x="580" y="70" width="240" height="110" rx="12" fill="#0c1a2e" stroke="#152743"/>
-    <text x="700" y="120" text-anchor="middle" class="t" font-size="32" fill="#3fe0a0">99.99%</text>
-    <text x="700" y="155" text-anchor="middle" class="m" font-size="13" fill="#5a7096">𝑢𝑝𝑡𝑖𝑚𝑒 (30𝑑)</text>
+    <rect x="580" y="70" width="240" height="130" rx="12" fill="#0c1a2e" stroke="#152743"/>
+    <text x="600" y="95" class="m" font-size="11" fill="#5a7096">● UPTIME</text>
+    <text x="700" y="140" text-anchor="middle" class="t pop" font-size="36" fill="#3fe0a0">99.99%</text>
+    <text x="700" y="170" text-anchor="middle" class="m" font-size="12" fill="#5a7096">𝑙𝑎𝑠𝑡 30 𝑑𝑎𝑦𝑠</text>
+    <rect x="600" y="180" width="200" height="6" rx="3" fill="#12203a"/>
+    <rect x="600" y="180" width="198" height="6" rx="3" fill="#3fe0a0" opacity="0.85">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </rect>
   </g>
   <g class="p4" filter="url(#mg)">
-    <rect x="850" y="70" width="210" height="110" rx="12" fill="#0c1a2e" stroke="#152743"/>
-    <text x="955" y="120" text-anchor="middle" class="t" font-size="32" fill="#ff2fd0">3.2 µ𝑠</text>
-    <text x="955" y="155" text-anchor="middle" class="m" font-size="13" fill="#5a7096">𝑝𝑒𝑟-𝑝𝑎𝑐𝑘𝑒𝑡 𝑜𝑣𝑒𝑟ℎ𝑒𝑎𝑑</text>
+    <rect x="850" y="70" width="210" height="130" rx="12" fill="#0c1a2e" stroke="#152743"/>
+    <text x="870" y="95" class="m" font-size="11" fill="#5a7096">◆ OVERHEAD</text>
+    <text x="955" y="140" text-anchor="middle" class="t pop" font-size="32" fill="#ff2fd0">3.2 µ𝑠</text>
+    <text x="955" y="170" text-anchor="middle" class="m" font-size="12" fill="#5a7096">𝑝𝑒𝑟 𝑝𝑎𝑐𝑘𝑒𝑡</text>
+    <circle cx="900" cy="185" r="5" fill="#ff2fd0" opacity="0.6"><animate attributeName="r" values="3;6;3" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="930" cy="185" r="5" fill="#ff2fd0" opacity="0.8"><animate attributeName="r" values="4;7;4" dur="1.5s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="960" cy="185" r="5" fill="#ff2fd0" opacity="0.6"><animate attributeName="r" values="3;6;3" dur="1.5s" begin="0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="990" cy="185" r="5" fill="#ff2fd0" opacity="0.7"><animate attributeName="r" values="4;7;4" dur="1.5s" begin="0.9s" repeatCount="indefinite"/></circle>
   </g>
-  <rect x="40" y="210" width="1020" height="100" rx="12" fill="#0c1a2e" stroke="#152743"/>
-  <text x="70" y="250" class="m" font-size="13" fill="#5fd0ff">𝑎𝑐𝑡𝑖𝑣𝑒 𝑒𝑑𝑔𝑒𝑠</text>
-  <text x="70" y="280" class="t" font-size="20" fill="#3fe0a0">𝑒𝑑𝑔𝑒-𝑒𝑢 · 𝑒𝑑𝑔𝑒-𝑢𝑠 · 𝑒𝑑𝑔𝑒-𝑎𝑝</text>
-  <text x="700" y="255" class="m" font-size="14" fill="#00f0ff">𝑐𝑖𝑝ℎ𝑒𝑟: 𝑋𝐶ℎ𝑎𝐶ℎ𝑎20-𝑃𝑜𝑙𝑦1305</text>
-  <text x="700" y="285" class="m" font-size="14" fill="#8a5cff">𝑜𝑏𝑓𝑠: 𝑇𝐿𝑆 1.3 𝑐𝑜𝑣𝑒𝑟</text>
+  <rect x="40" y="230" width="1020" height="100" rx="12" fill="#0c1a2e" stroke="#152743"/>
+  <text x="70" y="265" class="m" font-size="12" fill="#5fd0ff">𝑎𝑐𝑡𝑖𝑣𝑒 𝑒𝑑𝑔𝑒𝑠</text>
+  <text x="70" y="295" class="t" font-size="20" fill="#3fe0a0">𝑒𝑑𝑔𝑒-𝑒𝑢 · 𝑒𝑑𝑔𝑒-𝑢𝑠 · 𝑒𝑑𝑔𝑒-𝑎𝑝</text>
+  <g>
+    <circle cx="70" cy="315" r="4" fill="#3fe0a0"><animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/></circle>
+    <text x="85" y="319" class="m" font-size="11" fill="#5a7096">𝑎𝑙𝑙 𝑛𝑜𝑑𝑒𝑠 ℎ𝑒𝑎𝑙𝑡ℎ𝑦</text>
+  </g>
+  <text x="700" y="270" class="m" font-size="14" fill="#00f0ff">𝑐𝑖𝑝ℎ𝑒𝑟: 𝑋𝐶ℎ𝑎𝐶ℎ𝑎20-𝑃𝑜𝑙𝑦1305</text>
+  <text x="700" y="300" class="m" font-size="14" fill="#8a5cff">𝑜𝑏𝑓𝑠: 𝑇𝐿𝑆 1.3 𝑐𝑜𝑣𝑒𝑟</text>
 </svg>
