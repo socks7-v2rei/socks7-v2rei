@@ -1,19 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 90" width="780" height="90" role="img" aria-label="Badges">
   <defs>
+    <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.85" fill="#1a2a42" opacity="0.65"/>
+      <circle cx="13" cy="11" r="0.7" fill="#152438" opacity="0.5"/>
+      <circle cx="7" cy="17" r="0.6" fill="#1c3048" opacity="0.4"/>
+    </pattern>
     <style>
       .m{font-family:ui-monospace,monospace;font-size:13px}
       @keyframes pulse{0%,100%{opacity:0.75}50%{opacity:1}}
       .p{animation:pulse 2.6s ease-in-out infinite}
     </style>
   </defs>
-  <rect width="780" height="90" rx="12" fill="#050810"/>
+  <rect width="780" height="90" rx="12" fill="#060a12"/><rect width="780" height="90" rx="12" fill="url(#dots)"/>
   <g class="p">
     <rect x="20" y="22" width="130" height="46" rx="10" fill="#0c1a2e" stroke="#00f0ff" stroke-width="1.2"/>
     <text x="85" y="50" text-anchor="middle" class="m" fill="#00f0ff">𝑣7.0 𝑠ℎ𝑖𝑝𝑝𝑖𝑛𝑔</text>
     <rect x="165" y="22" width="160" height="46" rx="10" fill="#0c1a2e" stroke="#8a5cff" stroke-width="1.2"/>
     <text x="245" y="50" text-anchor="middle" class="m" fill="#8a5cff">𝑋𝐶ℎ𝑎𝐶ℎ𝑎20-𝑃𝑜𝑙𝑦1305</text>
     <rect x="340" y="22" width="150" height="46" rx="10" fill="#0c1a2e" stroke="#ff2fd0" stroke-width="1.2"/>
-    <text x="415" y="50" text-anchor="middle" class="m" fill="#8a5cff">2-𝑅𝑇𝑇 𝑍𝐾 ℎ𝑎𝑛𝑑𝑠ℎ𝑎𝑘𝑒</text>
+    <text x="415" y="50" text-anchor="middle" class="m" fill="#ff2fd0">2-𝑅𝑇𝑇 𝑍𝐾 ℎ𝑎𝑛𝑑𝑠ℎ𝑎𝑘𝑒</text>
     <rect x="505" y="22" width="120" height="46" rx="10" fill="#0c1a2e" stroke="#3fe0a0" stroke-width="1.2"/>
     <text x="565" y="50" text-anchor="middle" class="m" fill="#3fe0a0">𝑚𝑢𝑥 𝑠𝑡𝑟𝑒𝑎𝑚𝑠</text>
     <rect x="640" y="22" width="120" height="46" rx="10" fill="#0c1a2e" stroke="#5fd0ff" stroke-width="1.2"/>

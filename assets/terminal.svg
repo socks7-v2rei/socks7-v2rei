@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="100%" height="400" role="img" aria-label="SOCKS7 Terminal">
   <defs>
-    <linearGradient id="tbg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#070c16"/><stop offset="100%" stop-color="#04070e"/>
-    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.85" fill="#1a2a42" opacity="0.65"/>
+      <circle cx="13" cy="11" r="0.7" fill="#152438" opacity="0.5"/>
+      <circle cx="7" cy="17" r="0.6" fill="#1c3048" opacity="0.4"/>
+    </pattern>
     <filter id="tg"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <style>
       .term{font-family:ui-monospace,'JetBrains Mono',Menlo,monospace}
@@ -19,7 +21,7 @@
       .l8{animation:typeIn 0.4s ease 2.7s both}
     </style>
   </defs>
-  <rect width="1000" height="400" rx="14" fill="url(#tbg)" stroke="#152743" stroke-width="1"/>
+  <rect width="1000" height="400" rx="14" fill="#060a12"/><rect width="1000" height="400" rx="14" fill="url(#dots)"/>
   <rect width="1000" height="38" rx="14" fill="#0b1322"/>
   <rect y="26" width="1000" height="12" fill="#0b1322"/>
   <circle cx="26" cy="19" r="6" fill="#ff5f57"/>
