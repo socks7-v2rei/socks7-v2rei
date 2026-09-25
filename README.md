@@ -2,21 +2,17 @@
   <img src="assets/hero.svg" width="100%" alt="SOCKS7 — Next Generation Encrypted Proxy Protocol"/>
 </div>
 
-<div align="center">
-  <strong>EN</strong> &nbsp;·&nbsp; <a href="README.fa.md">فارسی</a>
-</div>
-
 <br/>
 
 <div align="center">
 
-> **SOCKS7** is not "another proxy". It is a ground-up transport fabric that carries *many* logical streams over a *single* obfuscated socket — with a 2-RTT zero-knowledge handshake, forward secrecy, and automatic least-latency egress failover.
+> **𝑆𝑂𝐶𝐾𝑆7** is not "another proxy". It is a ground-up transport fabric that carries *many* logical streams over a *single* obfuscated socket — with a 2-RTT zero-knowledge handshake, forward secrecy, and automatic least-latency egress failover.
 
 </div>
 
 <br/>
 
-## ⚡ See it move
+## ⚡ 𝑆𝑒𝑒 𝑖𝑡 𝑚𝑜𝑣𝑒
 
 <div align="center">
   <img src="assets/terminal.svg" width="92%" alt="socks7 live terminal session"/>
@@ -24,9 +20,9 @@
 
 <br/>
 
-## 🧬 Why SOCKS7 exists
+## 🧬 𝑊ℎ𝑦 𝑆𝑂𝐶𝐾𝑆7 𝑒𝑥𝑖𝑠𝑡𝑠
 
-|  | Classic SOCKS5 | **SOCKS7** |
+|  | Classic SOCKS5 | **𝑆𝑂𝐶𝐾𝑆7** |
 |---|---|---|
 | Streams per connection | 1 | **unlimited (multiplexed)** |
 | Handshake | plaintext negotiation | **2-RTT zero-knowledge** |
@@ -44,7 +40,7 @@
 
 <br/>
 
-## 🔐 The handshake
+## 🔐 𝑇ℎ𝑒 ℎ𝑎𝑛𝑑𝑠ℎ𝑎𝑘𝑒
 
 <div align="center">
   <img src="assets/handshake.svg" width="100%" alt="SOCKS7 handshake sequence"/>
@@ -52,7 +48,7 @@
 
 <br/>
 
-## 📡 Live telemetry
+## 📡 𝐿𝑖𝑣𝑒 𝑡𝑒𝑙𝑒𝑚𝑒𝑡𝑟𝑦
 
 <div align="center">
   <img src="assets/metrics.svg" width="100%" alt="SOCKS7 live telemetry dashboard"/>
@@ -60,7 +56,7 @@
 
 <br/>
 
-## 🌐 The fabric
+## 🌐 𝑇ℎ𝑒 𝑓𝑎𝑏𝑟𝑖𝑐
 
 <div align="center">
   <img src="assets/contribution-network.svg" width="100%" alt="SOCKS7 contribution network"/>
@@ -68,7 +64,7 @@
 
 <br/>
 
-## 🧰 Quick start
+## 🧰 𝑄𝑢𝑖𝑐𝑘 𝑠𝑡𝑎𝑟𝑡
 
 ```bash
 # 1 · install
@@ -91,7 +87,7 @@ with Client("127.0.0.1:1080", streams=8) as c:
 
 <br/>
 
-## 🗺 Roadmap
+## 🗺 𝑅𝑜𝑎𝑑𝑚𝑎𝑝
 
 ```text
 [x]  v7.0  core transport · mux · XChaCha20            <- shipping
@@ -103,7 +99,7 @@ with Client("127.0.0.1:1080", streams=8) as c:
 
 <br/>
 
-## 🔗 Connect
+## 🔗 𝐶𝑜𝑛𝑛𝑒𝑐𝑡
 
 <div align="center">
   <img src="assets/badges.svg" width="720" alt="SOCKS7 badges"/>
@@ -116,5 +112,5 @@ with Client("127.0.0.1:1080", streams=8) as c:
 </div>
 
 <div align="center">
-  <sub><code>// built one packet at a time · SOCKS7 © 2026</code></sub>
+  <sub><code>// 𝑏𝑢𝑖𝑙𝑡 𝑜𝑛𝑒 𝑝𝑎𝑐𝑘𝑒𝑡 𝑎𝑡 𝑎 𝑡𝑖𝑚𝑒 · 𝑆𝑂𝐶𝐾𝑆7 © 2026</code></sub>
 </div>
