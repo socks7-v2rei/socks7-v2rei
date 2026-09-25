@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="100%" height="160" role="img" aria-label="Connect">
+  <defs>
+    <linearGradient id="cbg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050810"/><stop offset="100%" stop-color="#0a1424"/>
+    </linearGradient>
+    <filter id="cg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .t{font-family:Georgia,'Times New Roman',serif}
+      .m{font-family:ui-monospace,monospace}
+      @keyframes pulse{0%,100%{opacity:0.7}50%{opacity:1}}
+      .p{animation:pulse 2.5s ease-in-out infinite}
+    </style>
+  </defs>
+  <rect width="800" height="160" rx="14" fill="url(#cbg2)"/>
+  <text x="400" y="45" text-anchor="middle" class="t" font-size="18" fill="#cfe4ff" letter-spacing="3">𝐶𝑜𝑛𝑛𝑒𝑐𝑡</text>
+  <g class="p" filter="url(#cg)">
+    <rect x="80" y="75" width="140" height="42" rx="10" fill="#0c1a2e" stroke="#00f0ff" stroke-width="1.2"/>
+    <text x="150" y="101" text-anchor="middle" class="m" font-size="14" fill="#00f0ff">𝑠𝑜𝑐𝑘𝑠7.𝑑𝑒𝑣</text>
+    <rect x="250" y="75" width="110" height="42" rx="10" fill="#0c1a2e" stroke="#8a5cff" stroke-width="1.2"/>
+    <text x="305" y="101" text-anchor="middle" class="m" font-size="14" fill="#8a5cff">𝐷𝑜𝑐𝑠</text>
+    <rect x="390" y="75" width="130" height="42" rx="10" fill="#0c1a2e" stroke="#ff2fd0" stroke-width="1.2"/>
+    <text x="455" y="101" text-anchor="middle" class="m" font-size="14" fill="#ff2fd0">𝑅𝑒𝑙𝑒𝑎𝑠𝑒𝑠</text>
+    <rect x="550" y="75" width="150" height="42" rx="10" fill="#0c1a2e" stroke="#3fe0a0" stroke-width="1.2"/>
+    <text x="625" y="101" text-anchor="middle" class="m" font-size="14" fill="#3fe0a0">𝐷𝑖𝑠𝑐𝑢𝑠𝑠𝑖𝑜𝑛𝑠</text>
+  </g>
+  <text x="400" y="145" text-anchor="middle" class="m" font-size="12" fill="#2a4060">// 𝑏𝑢𝑖𝑙𝑡 𝑜𝑛𝑒 𝑝𝑎𝑐𝑘𝑒𝑡 𝑎𝑡 𝑎 𝑡𝑖𝑚𝑒 · 𝑆𝑂𝐶𝐾𝑆7 © 2026</text>
+</svg>

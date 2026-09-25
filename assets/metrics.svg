@@ -1,36 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="400" role="img" aria-label="SOCKS7 live telemetry dashboard">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 340" width="100%" height="340" role="img" aria-label="Metrics">
   <defs>
-    <linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#060a12"/><stop offset="100%" stop-color="#0a1628"/></linearGradient>
-    <style>.m{font-family:ui-monospace,'JetBrains Mono',monospace}.v{font-size:28px;fill:#00f0ff;font-weight:700}.l{font-size:12px;fill:#5a7096}@keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}.p{animation:pulse 2s ease-in-out infinite}</style>
+    <linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050810"/><stop offset="100%" stop-color="#0a1424"/>
+    </linearGradient>
+    <filter id="mg"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .t{font-family:Georgia,'Times New Roman',serif}
+      .m{font-family:ui-monospace,monospace}
+      @keyframes pulse{0%,100%{opacity:0.65}50%{opacity:1}}
+      .p{animation:pulse 2.4s ease-in-out infinite}
+      .p2{animation:pulse 2.4s ease-in-out 0.4s infinite}
+      .p3{animation:pulse 2.4s ease-in-out 0.8s infinite}
+      .p4{animation:pulse 2.4s ease-in-out 1.2s infinite}
+    </style>
   </defs>
-  <rect width="1200" height="400" fill="url(#mbg)"/>
-  <text x="600" y="36" text-anchor="middle" class="m" font-size="16" fill="#cfe4ff" letter-spacing="3">// LIVE TELEMETRY · SOCKS7 FABRIC</text>
-  <!-- metric cards -->
-  <g class="p">
-    <rect x="40" y="70" width="260" height="120" rx="10" fill="#0c1a2e" stroke="#152743"/>
-    <text x="170" y="120" text-anchor="middle" class="m v">0.8 ms</text>
-    <text x="170" y="150" text-anchor="middle" class="m l">handshake latency</text>
+  <rect width="1100" height="340" rx="14" fill="url(#mbg)"/>
+  <text x="550" y="38" text-anchor="middle" class="t" font-size="18" fill="#cfe4ff" letter-spacing="3">𝐿𝑖𝑣𝑒 𝑡𝑒𝑙𝑒𝑚𝑒𝑡𝑟𝑦</text>
+  <g class="p" filter="url(#mg)">
+    <rect x="40" y="70" width="240" height="110" rx="12" fill="#0c1a2e" stroke="#152743"/>
+    <text x="160" y="120" text-anchor="middle" class="t" font-size="32" fill="#00f0ff">0.8 𝑚𝑠</text>
+    <text x="160" y="155" text-anchor="middle" class="m" font-size="13" fill="#5a7096">ℎ𝑎𝑛𝑑𝑠ℎ𝑎𝑘𝑒 𝑙𝑎𝑡𝑒𝑛𝑐𝑦</text>
   </g>
-  <g class="p" style="animation-delay:.3s">
-    <rect x="330" y="70" width="260" height="120" rx="10" fill="#0c1a2e" stroke="#152743"/>
-    <text x="460" y="120" text-anchor="middle" class="m v">12.4k</text>
-    <text x="460" y="150" text-anchor="middle" class="m l">streams / socket</text>
+  <g class="p2" filter="url(#mg)">
+    <rect x="310" y="70" width="240" height="110" rx="12" fill="#0c1a2e" stroke="#152743"/>
+    <text x="430" y="120" text-anchor="middle" class="t" font-size="32" fill="#8a5cff">12.4𝑘</text>
+    <text x="430" y="155" text-anchor="middle" class="m" font-size="13" fill="#5a7096">𝑠𝑡𝑟𝑒𝑎𝑚𝑠 / 𝑠𝑜𝑐𝑘𝑒𝑡</text>
   </g>
-  <g class="p" style="animation-delay:.6s">
-    <rect x="620" y="70" width="260" height="120" rx="10" fill="#0c1a2e" stroke="#152743"/>
-    <text x="750" y="120" text-anchor="middle" class="m v">99.99%</text>
-    <text x="750" y="150" text-anchor="middle" class="m l">uptime (30d)</text>
+  <g class="p3" filter="url(#mg)">
+    <rect x="580" y="70" width="240" height="110" rx="12" fill="#0c1a2e" stroke="#152743"/>
+    <text x="700" y="120" text-anchor="middle" class="t" font-size="32" fill="#3fe0a0">99.99%</text>
+    <text x="700" y="155" text-anchor="middle" class="m" font-size="13" fill="#5a7096">𝑢𝑝𝑡𝑖𝑚𝑒 (30𝑑)</text>
   </g>
-  <g class="p" style="animation-delay:.9s">
-    <rect x="910" y="70" width="250" height="120" rx="10" fill="#0c1a2e" stroke="#152743"/>
-    <text x="1035" y="120" text-anchor="middle" class="m v">3.2 µs</text>
-    <text x="1035" y="150" text-anchor="middle" class="m l">per-packet overhead</text>
+  <g class="p4" filter="url(#mg)">
+    <rect x="850" y="70" width="210" height="110" rx="12" fill="#0c1a2e" stroke="#152743"/>
+    <text x="955" y="120" text-anchor="middle" class="t" font-size="32" fill="#ff2fd0">3.2 µ𝑠</text>
+    <text x="955" y="155" text-anchor="middle" class="m" font-size="13" fill="#5a7096">𝑝𝑒𝑟-𝑝𝑎𝑐𝑘𝑒𝑡 𝑜𝑣𝑒𝑟ℎ𝑒𝑎𝑑</text>
   </g>
-  <!-- bottom row -->
-  <rect x="40" y="220" width="1120" height="140" rx="10" fill="#0c1a2e" stroke="#152743"/>
-  <text x="60" y="250" class="m" font-size="13" fill="#5fd0ff">active edges</text>
-  <text x="60" y="280" class="m" font-size="22" fill="#3fe0a0">edge-eu · edge-us · edge-ap</text>
-  <text x="60" y="320" class="m" font-size="12" fill="#5a7096">least-latency selected · automatic failover · zero-knowledge session</text>
-  <text x="900" y="280" class="m" font-size="14" fill="#00f0ff">cipher: XChaCha20-Poly1305</text>
-  <text x="900" y="310" class="m" font-size="14" fill="#8a5cff">obfs: TLS 1.3 cover</text>
+  <rect x="40" y="210" width="1020" height="100" rx="12" fill="#0c1a2e" stroke="#152743"/>
+  <text x="70" y="250" class="m" font-size="13" fill="#5fd0ff">𝑎𝑐𝑡𝑖𝑣𝑒 𝑒𝑑𝑔𝑒𝑠</text>
+  <text x="70" y="280" class="t" font-size="20" fill="#3fe0a0">𝑒𝑑𝑔𝑒-𝑒𝑢 · 𝑒𝑑𝑔𝑒-𝑢𝑠 · 𝑒𝑑𝑔𝑒-𝑎𝑝</text>
+  <text x="700" y="255" class="m" font-size="14" fill="#00f0ff">𝑐𝑖𝑝ℎ𝑒𝑟: 𝑋𝐶ℎ𝑎𝐶ℎ𝑎20-𝑃𝑜𝑙𝑦1305</text>
+  <text x="700" y="285" class="m" font-size="14" fill="#8a5cff">𝑜𝑏𝑓𝑠: 𝑇𝐿𝑆 1.3 𝑐𝑜𝑣𝑒𝑟</text>
 </svg>
