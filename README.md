@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/connector.svg" width="100%" alt=""/>
+  <img src="assets/connector-1.svg" width="100%" alt=""/>
 </div>
 
 <div align="center">
@@ -11,7 +11,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/connector.svg" width="100%" alt=""/>
+  <img src="assets/connector-2.svg" width="100%" alt=""/>
 </div>
 
 <div align="center">
@@ -19,7 +19,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/connector.svg" width="100%" alt=""/>
+  <img src="assets/connector-3.svg" width="100%" alt=""/>
 </div>
 
 <div align="center">
@@ -27,7 +27,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/connector.svg" width="100%" alt=""/>
+  <img src="assets/connector-4.svg" width="100%" alt=""/>
 </div>
 
 <div align="center">
@@ -35,7 +35,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/connector.svg" width="100%" alt=""/>
+  <img src="assets/connector-5.svg" width="100%" alt=""/>
 </div>
 
 <div align="center">
@@ -43,7 +43,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/connector.svg" width="100%" alt=""/>
+  <img src="assets/connector-1.svg" width="100%" alt=""/>
 </div>
 
 <div align="center">
@@ -51,7 +51,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/connector.svg" width="100%" alt=""/>
+  <img src="assets/connector-2.svg" width="100%" alt=""/>
 </div>
 
 <div align="center">
@@ -59,7 +59,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/connector.svg" width="100%" alt=""/>
+  <img src="assets/connector-5.svg" width="100%" alt=""/>
 </div>
 
 <div align="center">
