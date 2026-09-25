@@ -1,5 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 110" width="100%" height="110" role="img" aria-label="five parallel tunnels">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="100%" height="120" role="img" aria-label="five parallel tunnels on dotted wave">
   <defs>
+    <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.85" fill="#1a2a42" opacity="0.7"/>
+      <circle cx="13" cy="11" r="0.7" fill="#152438" opacity="0.55"/>
+      <circle cx="7" cy="17" r="0.6" fill="#1c3048" opacity="0.45"/>
+    </pattern>
     <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
       <stop offset="40%" stop-color="#00f0ff" stop-opacity="1"/>
@@ -30,20 +35,14 @@
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <style>
-      @keyframes flow {
-        0%   { stroke-dashoffset: 40; }
-        100% { stroke-dashoffset: 0; }
-      }
+      @keyframes flow { 0%{stroke-dashoffset:40} 100%{stroke-dashoffset:0} }
       @keyframes pkt {
         0%   { transform: translateY(0); opacity: 0; }
         15%  { opacity: 1; }
         85%  { opacity: 1; }
-        100% { transform: translateY(100px); opacity: 0; }
+        100% { transform: translateY(105px); opacity: 0; }
       }
-      .flow {
-        stroke-dasharray: 6 10;
-        animation: flow 1.2s linear infinite;
-      }
+      .flow { stroke-dasharray: 6 10; animation: flow 1.2s linear infinite; }
       .p1 { animation: pkt 2s ease-in-out infinite; }
       .p2 { animation: pkt 2s ease-in-out 0.4s infinite; }
       .p3 { animation: pkt 2s ease-in-out 0.8s infinite; }
@@ -51,30 +50,23 @@
       .p5 { animation: pkt 2s ease-in-out 1.6s infinite; }
     </style>
   </defs>
-
-  <!-- Tunnel 1 -->
-  <line x1="200" y1="5" x2="200" y2="105" stroke="url(#g1)" stroke-width="4" filter="url(#glow)"/>
-  <line x1="200" y1="5" x2="200" y2="105" stroke="#00f0ff" stroke-width="1.5" opacity="0.7" class="flow"/>
-  <circle cx="200" cy="8" r="4" fill="#00f0ff" class="p1" filter="url(#glow)"/>
-
-  <!-- Tunnel 2 -->
-  <line x1="400" y1="5" x2="400" y2="105" stroke="url(#g2)" stroke-width="4" filter="url(#glow)"/>
-  <line x1="400" y1="5" x2="400" y2="105" stroke="#5fd0ff" stroke-width="1.5" opacity="0.7" class="flow"/>
-  <circle cx="400" cy="8" r="4" fill="#5fd0ff" class="p2" filter="url(#glow)"/>
-
-  <!-- Tunnel 3 (center) -->
-  <line x1="600" y1="5" x2="600" y2="105" stroke="url(#g3)" stroke-width="5" filter="url(#glow)"/>
-  <line x1="600" y1="5" x2="600" y2="105" stroke="#cfe4ff" stroke-width="2" opacity="0.85" class="flow"/>
-  <circle cx="600" cy="8" r="5" fill="#8a5cff" class="p3" filter="url(#glow)"/>
-
-  <!-- Tunnel 4 -->
-  <line x1="800" y1="5" x2="800" y2="105" stroke="url(#g4)" stroke-width="4" filter="url(#glow)"/>
-  <line x1="800" y1="5" x2="800" y2="105" stroke="#ff2fd0" stroke-width="1.5" opacity="0.7" class="flow"/>
-  <circle cx="800" cy="8" r="4" fill="#ff2fd0" class="p4" filter="url(#glow)"/>
-
-  <!-- Tunnel 5 -->
-  <line x1="1000" y1="5" x2="1000" y2="105" stroke="url(#g5)" stroke-width="4" filter="url(#glow)"/>
-  <line x1="1000" y1="5" x2="1000" y2="105" stroke="#ff6ec7" stroke-width="1.5" opacity="0.7" class="flow"/>
-  <circle cx="1000" cy="8" r="4" fill="#ff6ec7" class="p5" filter="url(#glow)"/>
-
+  <rect width="1200" height="120" fill="#060a12"/>
+  <rect width="1200" height="120" fill="url(#dots)"/>
+  <path d="M0,40 Q200,28 400,40 T800,40 T1200,40" fill="none" stroke="#0e1a2e" stroke-width="20" opacity="0.5"/>
+  <path d="M0,75 Q200,88 400,75 T800,75 T1200,75" fill="none" stroke="#0c1626" stroke-width="18" opacity="0.4"/>
+  <line x1="200" y1="8" x2="200" y2="112" stroke="url(#g1)" stroke-width="4" filter="url(#glow)"/>
+  <line x1="200" y1="8" x2="200" y2="112" stroke="#00f0ff" stroke-width="1.5" opacity="0.7" class="flow"/>
+  <circle cx="200" cy="10" r="4" fill="#00f0ff" class="p1" filter="url(#glow)"/>
+  <line x1="400" y1="8" x2="400" y2="112" stroke="url(#g2)" stroke-width="4" filter="url(#glow)"/>
+  <line x1="400" y1="8" x2="400" y2="112" stroke="#5fd0ff" stroke-width="1.5" opacity="0.7" class="flow"/>
+  <circle cx="400" cy="10" r="4" fill="#5fd0ff" class="p2" filter="url(#glow)"/>
+  <line x1="600" y1="8" x2="600" y2="112" stroke="url(#g3)" stroke-width="5" filter="url(#glow)"/>
+  <line x1="600" y1="8" x2="600" y2="112" stroke="#cfe4ff" stroke-width="2" opacity="0.85" class="flow"/>
+  <circle cx="600" cy="10" r="5" fill="#8a5cff" class="p3" filter="url(#glow)"/>
+  <line x1="800" y1="8" x2="800" y2="112" stroke="url(#g4)" stroke-width="4" filter="url(#glow)"/>
+  <line x1="800" y1="8" x2="800" y2="112" stroke="#ff2fd0" stroke-width="1.5" opacity="0.7" class="flow"/>
+  <circle cx="800" cy="10" r="4" fill="#ff2fd0" class="p4" filter="url(#glow)"/>
+  <line x1="1000" y1="8" x2="1000" y2="112" stroke="url(#g5)" stroke-width="4" filter="url(#glow)"/>
+  <line x1="1000" y1="8" x2="1000" y2="112" stroke="#ff6ec7" stroke-width="1.5" opacity="0.7" class="flow"/>
+  <circle cx="1000" cy="10" r="4" fill="#ff6ec7" class="p5" filter="url(#glow)"/>
 </svg>
