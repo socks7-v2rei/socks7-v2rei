@@ -1,42 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="100%" height="380" role="img" aria-label="SOCKS7 terminal session">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="100%" height="400" role="img" aria-label="SOCKS7 Terminal">
   <defs>
     <linearGradient id="tbg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#080e1a"/>
-      <stop offset="1" stop-color="#04070e"/>
+      <stop offset="0%" stop-color="#070c16"/><stop offset="100%" stop-color="#04070e"/>
     </linearGradient>
-    <linearGradient id="tneon" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#00f0ff"/>
-      <stop offset="1" stop-color="#8a5cff"/>
-    </linearGradient>
+    <filter id="tg"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <style>
-      .term { font-family: ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace; }
-      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
-      .cursor { animation: blink 1s step-end infinite; }
-      @keyframes type1 { from{width:0} to{width:100%} }
-      .type { overflow: hidden; white-space: nowrap; animation: type1 2s steps(40) forwards; }
+      .term{font-family:ui-monospace,'JetBrains Mono',Menlo,monospace}
+      @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+      .cursor{animation:blink 1.1s step-end infinite}
+      @keyframes typeIn{from{opacity:0}to{opacity:1}}
+      .l1{animation:typeIn 0.4s ease 0.2s both}
+      .l2{animation:typeIn 0.4s ease 0.5s both}
+      .l3{animation:typeIn 0.4s ease 0.8s both}
+      .l4{animation:typeIn 0.4s ease 1.1s both}
+      .l5{animation:typeIn 0.4s ease 1.5s both}
+      .l6{animation:typeIn 0.4s ease 1.9s both}
+      .l7{animation:typeIn 0.4s ease 2.3s both}
+      .l8{animation:typeIn 0.4s ease 2.7s both}
     </style>
   </defs>
-  <rect width="1000" height="380" rx="12" fill="url(#tbg)" stroke="#152743" stroke-width="1"/>
-  <!-- title bar -->
-  <rect width="1000" height="36" rx="12" fill="#0c1424"/>
-  <rect y="24" width="1000" height="12" fill="#0c1424"/>
-  <circle cx="24" cy="18" r="6" fill="#ff5f57"/>
-  <circle cx="46" cy="18" r="6" fill="#febc2e"/>
-  <circle cx="68" cy="18" r="6" fill="#28c840"/>
-  <text x="500" y="22" text-anchor="middle" class="term" font-size="12" fill="#5a7096">socks7 — edge session</text>
-  <!-- terminal content -->
-  <text x="24" y="70" class="term" font-size="14" fill="#3fe0a0">$ </text>
-  <text x="48" y="70" class="term" font-size="14" fill="#cfe4ff">socks7 node --listen :1080 --cipher xchacha20 --obfs tls1.3</text>
-  <text x="24" y="100" class="term" font-size="13" fill="#5fd0ff">[ok] listening on 0.0.0.0:1080</text>
-  <text x="24" y="124" class="term" font-size="13" fill="#5fd0ff">[ok] cipher = XChaCha20-Poly1305</text>
-  <text x="24" y="148" class="term" font-size="13" fill="#5fd0ff">[ok] obfuscation = TLS 1.3 cover traffic</text>
-  <text x="24" y="172" class="term" font-size="13" fill="#5fd0ff">[ok] mux streams = unlimited</text>
-  <text x="24" y="210" class="term" font-size="14" fill="#3fe0a0">$ </text>
-  <text x="48" y="210" class="term" font-size="14" fill="#cfe4ff">socks7 connect --peer edge-1.eu --streams 4</text>
-  <text x="24" y="240" class="term" font-size="13" fill="#00f0ff">→ handshake 2-RTT complete (ZK)</text>
-  <text x="24" y="264" class="term" font-size="13" fill="#00f0ff">→ stream[0..3] multiplexed over 1 socket</text>
-  <text x="24" y="288" class="term" font-size="13" fill="#00f0ff">→ least-latency egress selected: 12ms</text>
-  <text x="24" y="320" class="term" font-size="14" fill="#3fe0a0">$ </text>
-  <rect x="48" y="308" width="8" height="16" fill="#00f0ff" class="cursor"/>
-  <text x="24" y="360" class="term" font-size="11" fill="#40598a">// SOCKS7 fabric online · packets flowing</text>
+  <rect width="1000" height="400" rx="14" fill="url(#tbg)" stroke="#152743" stroke-width="1"/>
+  <rect width="1000" height="38" rx="14" fill="#0b1322"/>
+  <rect y="26" width="1000" height="12" fill="#0b1322"/>
+  <circle cx="26" cy="19" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="19" r="6" fill="#febc2e"/>
+  <circle cx="70" cy="19" r="6" fill="#28c840"/>
+  <text x="500" y="24" text-anchor="middle" class="term" font-size="13" fill="#5a7096">𝑠𝑜𝑐𝑘𝑠7 — 𝑒𝑑𝑔𝑒 𝑠𝑒𝑠𝑠𝑖𝑜𝑛</text>
+  <text x="28" y="75" class="term l1" font-size="14" fill="#3fe0a0">$ </text>
+  <text x="52" y="75" class="term l1" font-size="14" fill="#cfe4ff">𝑠𝑜𝑐𝑘𝑠7 𝑛𝑜𝑑𝑒 --𝑙𝑖𝑠𝑡𝑒𝑛 :1080 --𝑐𝑖𝑝ℎ𝑒𝑟 𝑥𝑐ℎ𝑎𝑐ℎ𝑎20 --𝑜𝑏𝑓𝑠 𝑡𝑙𝑠1.3</text>
+  <text x="28" y="110" class="term l2" font-size="13" fill="#5fd0ff">[𝑜𝑘] 𝑙𝑖𝑠𝑡𝑒𝑛𝑖𝑛𝑔 𝑜𝑛 0.0.0.0:1080</text>
+  <text x="28" y="138" class="term l3" font-size="13" fill="#5fd0ff">[𝑜𝑘] 𝑐𝑖𝑝ℎ𝑒𝑟 = 𝑋𝐶ℎ𝑎𝐶ℎ𝑎20-𝑃𝑜𝑙𝑦1305</text>
+  <text x="28" y="166" class="term l4" font-size="13" fill="#5fd0ff">[𝑜𝑘] 𝑜𝑏𝑓𝑢𝑠𝑐𝑎𝑡𝑖𝑜𝑛 = 𝑇𝐿𝑆 1.3 𝑐𝑜𝑣𝑒𝑟 𝑡𝑟𝑎𝑓𝑓𝑖𝑐</text>
+  <text x="28" y="194" class="term l5" font-size="13" fill="#5fd0ff">[𝑜𝑘] 𝑚𝑢𝑥 𝑠𝑡𝑟𝑒𝑎𝑚𝑠 = 𝑢𝑛𝑙𝑖𝑚𝑖𝑡𝑒𝑑</text>
+  <text x="28" y="240" class="term l6" font-size="14" fill="#3fe0a0">$ </text>
+  <text x="52" y="240" class="term l6" font-size="14" fill="#cfe4ff">𝑠𝑜𝑐𝑘𝑠7 𝑐𝑜𝑛𝑛𝑒𝑐𝑡 --𝑝𝑒𝑒𝑟 𝑒𝑑𝑔𝑒-1.𝑒𝑢 --𝑠𝑡𝑟𝑒𝑎𝑚𝑠 4</text>
+  <text x="28" y="275" class="term l7" font-size="13" fill="#00f0ff" filter="url(#tg)">→ ℎ𝑎𝑛𝑑𝑠ℎ𝑎𝑘𝑒 2-𝑅𝑇𝑇 𝑐𝑜𝑚𝑝𝑙𝑒𝑡𝑒 (𝑍𝐾)</text>
+  <text x="28" y="303" class="term l8" font-size="13" fill="#00f0ff">→ 𝑠𝑡𝑟𝑒𝑎𝑚[0..3] 𝑚𝑢𝑙𝑡𝑖𝑝𝑙𝑒𝑥𝑒𝑑 · 𝑙𝑎𝑡𝑒𝑛𝑐𝑦 12𝑚𝑠</text>
+  <text x="28" y="350" class="term" font-size="14" fill="#3fe0a0">$ </text>
+  <rect x="52" y="337" width="9" height="18" fill="#00f0ff" class="cursor"/>
+  <text x="28" y="385" class="term" font-size="11" fill="#2a4060">// 𝑆𝑂𝐶𝐾𝑆7 𝑓𝑎𝑏𝑟𝑖𝑐 𝑜𝑛𝑙𝑖𝑛𝑒 · 𝑝𝑎𝑐𝑘𝑒𝑡𝑠 𝑓𝑙𝑜𝑤𝑖𝑛𝑔</text>
 </svg>
